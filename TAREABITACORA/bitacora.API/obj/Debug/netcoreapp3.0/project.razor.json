@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\vanguardia\\proyectos\\bitacora\\Bitacora\\bitacora.API\\bitacora.API.csproj",
+  "FilePath": "c:\\VANGUARDIA\\VANGUARDIATAREAS1\\TAREABITACORA\\bitacora.API\\bitacora.API.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14339,7 +14339,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 800
+    "CSharpLanguageVersion": 2147483646
   },
   "RootNamespace": "bitacora.API",
   "Documents": [],

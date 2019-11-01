@@ -36,16 +36,6 @@ namespace bitacora.API.Controllers
 
 
 
-        // [HttpGet("rango")]
-        // public Task<IActionResult> GetDatebyRange(IEnumerable<DateTime> ods)
-        // {
-        //     IEnumerable<Bitacora> bitacora =  _context.Bitacoras.Where(q=>ods.Contains(q.bitacoraFecha)) ;
-        //     //var bitacoras = await _context.Bitacoras.Where(s => s.bitacoraFecha >= fechaI && s.bitacoraFecha<=fechaF).ToListAsync();
-          
-        //     return (bitacora);
-        // }
-
-
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBitacora(int id, Bitacora bitacora)
         {

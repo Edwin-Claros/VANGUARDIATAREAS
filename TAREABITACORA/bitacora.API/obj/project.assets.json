@@ -1130,11 +1130,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VANGUARDIA\\TAREAS\\VANGUARDIATAREAS\\VANGUARDIATAREAS\\TAREABITACORA\\Bitacora\\bitacora.API\\bitacora.API.csproj",
+      "projectUniqueName": "C:\\VANGUARDIA\\VANGUARDIATAREAS1\\TAREABITACORA\\bitacora.API\\bitacora.API.csproj",
       "projectName": "bitacora.API",
-      "projectPath": "C:\\VANGUARDIA\\TAREAS\\VANGUARDIATAREAS\\VANGUARDIATAREAS\\TAREABITACORA\\Bitacora\\bitacora.API\\bitacora.API.csproj",
+      "projectPath": "C:\\VANGUARDIA\\VANGUARDIATAREAS1\\TAREABITACORA\\bitacora.API\\bitacora.API.csproj",
       "packagesPath": "C:\\Users\\edwin\\.nuget\\packages\\",
-      "outputPath": "C:\\VANGUARDIA\\TAREAS\\VANGUARDIATAREAS\\VANGUARDIATAREAS\\TAREABITACORA\\Bitacora\\bitacora.API\\obj\\",
+      "outputPath": "C:\\VANGUARDIA\\VANGUARDIATAREAS1\\TAREABITACORA\\bitacora.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
