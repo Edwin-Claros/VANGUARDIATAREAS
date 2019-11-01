@@ -10,9 +10,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace bitacora.API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
     
+    [Route("api/[controller]")]
+    [ApiController]
     public class BitacoraController: ControllerBase {
         private readonly DataContext _context;
 
@@ -26,11 +26,16 @@ namespace bitacora.API.Controllers
             return Ok(bitacoras);
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetSingle(DateTime id)
+        [HttpGet("{tiempo}")]
+       public async Task<ActionResult<Bitacora>> GetBitacora(DateTime tiempo)
         {
-            var bitacora = _context.Bitacoras.FirstOrDefault(q=> q.bitacoraFecha== id);
-            return Ok(bitacora);
+            var bitacora = await _context.Bitacoras.FirstOrDefaultAsync(q=> q.bitacoraFecha == tiempo);
+
+            if(bitacora==null){
+                return NotFound();
+            }
+
+            return bitacora;
         }
 
   /*   [HttpGet("{id}/{id2}")]
@@ -78,7 +83,7 @@ namespace bitacora.API.Controllers
             _context.Bitacoras.Add(bitacora);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("Getbitacora", new { id = bitacora.bitacoraId }, bitacora);
+            return CreatedAtAction("GetBitacora", new { id = bitacora.bitacoraId }, bitacora);
         }
 
          [HttpDelete("{id}")]

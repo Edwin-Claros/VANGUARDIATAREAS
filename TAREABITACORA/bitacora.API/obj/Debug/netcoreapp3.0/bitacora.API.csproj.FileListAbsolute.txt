@@ -127,3 +127,17 @@ C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\obj\Debug\netcoreapp3
 C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\obj\Debug\netcoreapp3.0\bitacora.API.csproj.CopyComplete
 C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\obj\Debug\netcoreapp3.0\bitacora.API.dll
 C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\obj\Debug\netcoreapp3.0\bitacora.API.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\TAREABITACORA\bitacora.API\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
