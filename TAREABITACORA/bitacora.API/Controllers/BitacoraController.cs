@@ -33,8 +33,15 @@ namespace bitacora.API.Controllers
             return Ok(bitacora);
         }
 
+  /*   [HttpGet("{id}/{id2}")]
+        public IActionResult GetRango(DateTime id,DateTime id2)
+        {
+            var bitacora = _context.Bitacoras.Where(x=>x.bitacoraFecha==id && x.bitacoraFecha==id2).ToArrayAsync();
+            return Ok(bitacora);
 
+        }
 
+*/
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBitacora(int id, Bitacora bitacora)
