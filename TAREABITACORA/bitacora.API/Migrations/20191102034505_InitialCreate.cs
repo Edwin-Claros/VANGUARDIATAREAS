@@ -11,17 +11,18 @@ namespace bitacora.API.Migrations
                 name: "dbo");
 
             migrationBuilder.CreateTable(
-                name: "Categories",
+                name: "Category",
+                schema: "dbo",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    CategoryName = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true)
+                    categoryId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    categoryNombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    categoryDescripcion = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categories", x => x.Id);
+                    table.PrimaryKey("PK_Category", x => x.categoryId);
                 });
 
             migrationBuilder.CreateTable(
@@ -30,7 +31,7 @@ namespace bitacora.API.Migrations
                 columns: table => new
                 {
                     bitacoraId = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     bitacoraFecha = table.Column<DateTime>(type: "DateTime", nullable: false),
                     bitacoraHoraInicio = table.Column<DateTime>(type: "DateTime", nullable: false),
                     bitacoraHoraFinal = table.Column<DateTime>(type: "DateTime", nullable: false),
@@ -40,11 +41,12 @@ namespace bitacora.API.Migrations
                 {
                     table.PrimaryKey("PK_Bitacora", x => x.bitacoraId);
                     table.ForeignKey(
-                        name: "FK_Bitacora_Categories_category_Id",
+                        name: "FK_Bitacora_Category_category_Id",
                         column: x => x.category_Id,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalSchema: "dbo",
+                        principalTable: "Category",
+                        principalColumn: "categoryId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -61,7 +63,8 @@ namespace bitacora.API.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Category",
+                schema: "dbo");
         }
     }
 }

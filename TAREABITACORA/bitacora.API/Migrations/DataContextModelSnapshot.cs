@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using bitacora.API.Data;
 
@@ -14,13 +15,18 @@ namespace bitacora.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.0.0");
+                .HasAnnotation("ProductVersion", "3.0.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("bitacora.API.Models.Bitacora", b =>
                 {
                     b.Property<int>("bitacoraId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("bitacoraFecha")
                         .HasColumnType("DateTime");
@@ -32,7 +38,7 @@ namespace bitacora.API.Migrations
                         .HasColumnType("DateTime");
 
                     b.Property<int>("category_Id")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("bitacoraId");
 
@@ -43,19 +49,24 @@ namespace bitacora.API.Migrations
 
             modelBuilder.Entity("bitacora.API.Models.Category", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("categoryId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CategoryName")
-                        .HasColumnType("TEXT");
+                    b.Property<string>("categoryDescripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("TEXT");
+                    b.Property<string>("categoryNombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("categoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Category","dbo");
                 });
 
             modelBuilder.Entity("bitacora.API.Models.Bitacora", b =>
@@ -63,7 +74,7 @@ namespace bitacora.API.Migrations
                     b.HasOne("bitacora.API.Models.Category", "Category")
                         .WithMany("Bitacoras")
                         .HasForeignKey("category_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

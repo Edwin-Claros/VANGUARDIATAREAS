@@ -21,7 +21,7 @@ namespace bitacora.API.Controllers
         }
 
        [HttpGet]
-        public async Task<IActionResult>GetAll(){
+        public async Task<IActionResult>GetBitacoras(){
             var bitacoras=await _context.Bitacoras.ToListAsync();
             return Ok(bitacoras);
         }
@@ -38,15 +38,15 @@ namespace bitacora.API.Controllers
             return bitacora;
         }
 
-  /*   [HttpGet("{id}/{id2}")]
+     [HttpGet("{id}/{id2}")]
         public IActionResult GetRango(DateTime id,DateTime id2)
         {
-            var bitacora = _context.Bitacoras.Where(x=>x.bitacoraFecha==id && x.bitacoraFecha==id2).ToArrayAsync();
+            var bitacora = _context.Bitacoras.Where(q=>q.bitacoraFecha >= id && q.bitacoraFecha <= id2).ToList();
             return Ok(bitacora);
 
         }
 
-*/
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBitacora(int id, Bitacora bitacora)
@@ -78,12 +78,12 @@ namespace bitacora.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Bitacora>> PostCalificacion(Bitacora bitacora)
+        public async Task<ActionResult<Bitacora>> PostBitacora(Bitacora bitacora)
         {
             _context.Bitacoras.Add(bitacora);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBitacora", new { id = bitacora.bitacoraId }, bitacora);
+            return CreatedAtAction("GetBitacora", new { tiempo = bitacora.bitacoraFecha }, bitacora);
         }
 
          [HttpDelete("{id}")]

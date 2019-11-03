@@ -1,0 +1,61 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Bitacora</h4>
+                <p class="card-category">Complete la informacion de la Actividad.</p>
+            </div>
+      <div class="card-body">
+        <form [formGroup]="FormularioGuardar"(submit)="onSubmit(FormularioGuardar.value)">
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <label>Fecha Actividad</label>
+                            <label for="example-datetime-local-input" class="col-2 col-form-label"></label>
+                                <div>
+                                    <input class="form-control" type="date" id="example-datetime-local-input" formControlName="bitacoraFecha">
+                                </div>
+                    </div>       
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6 mt-2">
+                            <label>Inicio De La Actividad</label>
+                                <label for="example-datetime-local-input" class="col-2 col-form-label"></label>
+                                    <div>
+                                        <input class="form-control" type="datetime-local" id="example-datetime-local-input" formControlName="bitacoraHoraInicio">
+                                    </div>
+                        </div>       
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <label>Final De Actividad</label>
+                                    <label for="example-datetime-local-input" class="col-2 col-form-label"></label>
+                                        <div>
+                                            <input class="form-control" type="datetime-local" id="example-datetime-local-input" formControlName="bitacoraHoraFinal">
+                                        </div>
+                            </div>       
+                        </div>
+
+                    <div class="row">
+                             <div class="col-md-5 mt-4">
+                                <label>Categoria De Actividad</label>
+                                    <select class="form-control form-control-lg" formControlName="category_Id">
+                                        <option *ngFor="let indexCategory of obtenerDatosCategory" [value]="indexCategory.categoryId"
+                                                >{{indexCategory.categoryNombre}}</option>
+                                        </select>
+                             </div>
+                    </div>
+
+        <button mat-raised-button type="submit" class="btn btn-danger pull-right" [disabled]="FormularioGuardar.invalid">Guardar Bitacora</button>
+                                        
+                            <div class="clearfix"></div>
+        </form>
+      </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
