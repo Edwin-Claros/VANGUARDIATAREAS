@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using bitacora.API.Data;
@@ -18,17 +19,23 @@ namespace bitacora.API.Controllers
         }
 
        
-        public async Task<IActionResult>GetCategies(){
-            var categories=await _context.Categories.ToListAsync();
-            return Ok(categories);
+        public async Task<ActionResult<IEnumerable<Category>>> GetCategies(){
+            return await _context.Categories.ToListAsync();
+         
         
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetCategory(int id)
+       public async Task<ActionResult<Category>> GetCategory(int id)
         {
-            var category = _context.Categories.FirstOrDefault(q=> q.categoryId == id);
-            return Ok(category);
+            var category = await _context.Categories.FindAsync(id);
+
+            
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return category;
         }
 
          [HttpPut("{id}")]

@@ -21,15 +21,14 @@ namespace bitacora.API.Controllers
         }
 
        [HttpGet]
-        public async Task<IActionResult>GetBitacoras(){
-            var bitacoras=await _context.Bitacoras.ToListAsync();
-            return Ok(bitacoras);
+        public async Task<ActionResult<IEnumerable<Bitacora>>> GetBitacoras(){
+            return await _context.Bitacoras.Include(q=>q.Category).ToListAsync();
         }
 
         [HttpGet("{tiempo}")]
        public async Task<ActionResult<Bitacora>> GetBitacora(DateTime tiempo)
         {
-            var bitacora = await _context.Bitacoras.FirstOrDefaultAsync(q=> q.bitacoraFecha == tiempo);
+            var bitacora = await _context.Bitacoras.Include(q=>q.Category).FirstOrDefaultAsync(q=> q.bitacoraFecha == tiempo);
 
             if(bitacora==null){
                 return NotFound();
@@ -41,7 +40,7 @@ namespace bitacora.API.Controllers
      [HttpGet("{id}/{id2}")]
         public IActionResult GetRango(DateTime id,DateTime id2)
         {
-            var bitacora = _context.Bitacoras.Where(q=>q.bitacoraFecha >= id && q.bitacoraFecha <= id2).ToList();
+            var bitacora = _context.Bitacoras.Include(q=>q.Category).Where(q=>q.bitacoraFecha >= id && q.bitacoraFecha <= id2).ToList();
             return Ok(bitacora);
 
         }

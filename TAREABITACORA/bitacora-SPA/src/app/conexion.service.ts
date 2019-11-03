@@ -12,6 +12,10 @@ export class ConexionService {
   getCategory(): Observable<any> {return this.http.get('http://localhost:5000/api/Category'); }
   getBitacora(): Observable<any> {return this.http.get('http://localhost:5000/api/Bitacora'); }
 
+  getBitacoraRango(Rango1: string, Rango2: string) {
+    return this.http.get(`http://localhost:5000/api/Bitacora/${Rango1}/${Rango2}`);
+  }
+
   addCategory(category: any)
   {
     let json = JSON.stringify(category);
@@ -26,4 +30,6 @@ export class ConexionService {
   
     return this.http.post("http://localhost:5000/api/Bitacora",json,{headers:headers});
   }
+
+
 }
