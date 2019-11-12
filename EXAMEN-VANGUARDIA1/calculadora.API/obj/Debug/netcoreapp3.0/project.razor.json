@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\VANGUARDIA\\VANGUARDIATAREAS1\\TAREABITACORA\\bitacora.API\\bitacora.API.csproj",
+  "FilePath": "c:\\VANGUARDIA\\VANGUARDIATAREAS1\\EXAMEN-VANGUARDIA1\\calculadora.API\\calculadora.API.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14341,7 +14341,7 @@
     ],
     "CSharpLanguageVersion": 2147483646
   },
-  "RootNamespace": "bitacora.API",
+  "RootNamespace": "calculadora.API",
   "Documents": [],
   "SerializationFormat": "0.2"
 }

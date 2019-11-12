@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using bitacora.API.Data;
+using calculadora.API.Data;
+using calculadora.API.Data.RepositoryUnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,7 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace bitacora.API
+namespace calculadora.API
 {
     public class Startup
     {
@@ -29,13 +30,19 @@ namespace bitacora.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-              services.AddMvc(option => option.EnableEndpointRouting = false)
+           
+             services.AddScoped<IDividirRepository, DividirRepository>();
+             services.AddScoped<IExponencialRepository, ExponencialRepository>();
+             services.AddScoped<IMultiplicarRepository, MultiplicarRepository>();
+             services.AddScoped<IRaizRepository, RaizRepository>();
+             services.AddScoped<IRestarRepository, RestarRepository>();
+             services.AddScoped<ISumarRepository, SumarRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddMvc(option => option.EnableEndpointRouting = false)
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
              services.AddCors();
             services.AddControllers();
-           
-             
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,16 +61,18 @@ namespace bitacora.API
 
 
 
+
+
             app.UseCors(x=> x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             
 
-            
+
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-            
         }
     }
 }
