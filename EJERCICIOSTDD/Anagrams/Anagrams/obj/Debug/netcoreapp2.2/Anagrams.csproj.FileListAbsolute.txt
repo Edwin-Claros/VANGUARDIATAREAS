@@ -1,0 +1,11 @@
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.deps.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.runtimeconfig.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.runtimeconfig.dev.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\bin\Debug\netcoreapp2.2\Anagrams.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.csprojAssemblyReference.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.csproj.CoreCompileInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.AssemblyInfoInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.AssemblyInfo.cs
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Anagrams\Anagrams\obj\Debug\netcoreapp2.2\Anagrams.pdb

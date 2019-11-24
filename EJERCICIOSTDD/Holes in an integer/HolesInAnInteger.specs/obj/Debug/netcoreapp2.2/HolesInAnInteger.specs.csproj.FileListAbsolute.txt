@@ -1,0 +1,15 @@
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\HolesInAnInteger.specs.deps.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\HolesInAnInteger.specs.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.csprojAssemblyReference.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.csproj.CoreCompileInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.AssemblyInfoInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.AssemblyInfo.cs
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\Machine.TestAdapter.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\HolesInAnInteger.specs.runtimeconfig.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\HolesInAnInteger.specs.runtimeconfig.dev.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\HolesInAnInteger.specs.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\Holes in an integer.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\bin\Debug\netcoreapp2.2\Holes in an integer.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.csproj.CopyComplete
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\HolesInAnInteger.specs\obj\Debug\netcoreapp2.2\HolesInAnInteger.specs.pdb

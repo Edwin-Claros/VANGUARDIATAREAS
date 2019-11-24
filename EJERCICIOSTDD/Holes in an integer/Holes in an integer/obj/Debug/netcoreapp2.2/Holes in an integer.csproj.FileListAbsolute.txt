@@ -1,0 +1,11 @@
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\bin\Debug\netcoreapp2.2\Holes in an integer.deps.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\bin\Debug\netcoreapp2.2\Holes in an integer.runtimeconfig.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\bin\Debug\netcoreapp2.2\Holes in an integer.runtimeconfig.dev.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\bin\Debug\netcoreapp2.2\Holes in an integer.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\bin\Debug\netcoreapp2.2\Holes in an integer.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.csprojAssemblyReference.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.csproj.CoreCompileInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.AssemblyInfoInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.AssemblyInfo.cs
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\EJERCICIOSTDD\Holes in an integer\Holes in an integer\obj\Debug\netcoreapp2.2\Holes in an integer.pdb

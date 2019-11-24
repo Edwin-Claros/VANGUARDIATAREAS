@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holes in an integer", "Holes in an integer\Holes in an integer.csproj", "{F15DA2F5-4FC6-4901-BFFC-EE5A14F6F68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolesInAnInteger.specs", "HolesInAnInteger.specs\HolesInAnInteger.specs.csproj", "{19D72B9A-3DA0-4669-9DA2-D19C6A92D2CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F15DA2F5-4FC6-4901-BFFC-EE5A14F6F68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15DA2F5-4FC6-4901-BFFC-EE5A14F6F68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15DA2F5-4FC6-4901-BFFC-EE5A14F6F68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15DA2F5-4FC6-4901-BFFC-EE5A14F6F68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D72B9A-3DA0-4669-9DA2-D19C6A92D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D72B9A-3DA0-4669-9DA2-D19C6A92D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D72B9A-3DA0-4669-9DA2-D19C6A92D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D72B9A-3DA0-4669-9DA2-D19C6A92D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BA6E03B-FA33-4D2F-A47D-8E284E374425}
+	EndGlobalSection
+EndGlobal
