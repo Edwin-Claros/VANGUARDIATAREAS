@@ -1,0 +1,14 @@
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\bin\Debug\netcoreapp2.2\GoToSPSWebApi.deps.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\bin\Debug\netcoreapp2.2\GoToSPSWebApi.runtimeconfig.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\bin\Debug\netcoreapp2.2\GoToSPSWebApi.runtimeconfig.dev.json
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\bin\Debug\netcoreapp2.2\GoToSPSWebApi.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.csprojAssemblyReference.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.csproj.CoreCompileInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.RazorAssemblyInfo.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.RazorAssemblyInfo.cs
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.AssemblyInfoInputs.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.AssemblyInfo.cs
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.RazorTargetAssemblyInfo.cache
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\bin\Debug\netcoreapp2.2\GoToSPSWebApi.pdb
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.dll
+C:\VANGUARDIA\VANGUARDIATAREAS1\GoToSPS\GoToSPSWebApi\GoToSPSWebApi\obj\Debug\netcoreapp2.2\GoToSPSWebApi.pdb

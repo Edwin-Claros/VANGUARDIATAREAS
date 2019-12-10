@@ -14339,7 +14339,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 2147483646
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "bitacora.API",
   "Documents": [],
