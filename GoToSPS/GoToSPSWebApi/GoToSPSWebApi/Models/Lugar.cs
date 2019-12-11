@@ -14,8 +14,10 @@ namespace GoToSPSWebApi.Models
         public DateTime lugarHoraCierre { get; set; }
 
         public int ciudad_Id { get; set; }
+        public int tipoAmbiente_Id { get; set; }
 
         public Ciudad Ciudad { get; set; }
+        public TipoAmbiente TipoAmbiente { get; set; }
 
         public List<ItinerarioEncabezado> ItinerarioEncabezado { get; set; }
         public List<Actividad> Actividades { get; set; }

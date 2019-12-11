@@ -14,9 +14,11 @@ namespace GoToSPSWebApi.Models
 
         public int lugar_Id { get; set; }
         public int ciudad_Id { get; set; }
+        public int usuario_Id { get; set; }
 
         public Lugar Lugar { get; set; }
         public Ciudad Ciudad { get; set; }
+        public Usuario Usuario { get; set; }
 
         public List<ItinerarioDetalle> ItinerarioDetalles { get; set; }
     }

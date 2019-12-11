@@ -21,6 +21,7 @@ namespace GoToSPSWebApi.DataContext.Map
             builder.Property(e => e.lugarHoraCierre).HasColumnType("DateTime").IsRequired();
 
             builder.HasOne(e => e.Ciudad).WithMany(e => e.Lugares).HasForeignKey(e => e.ciudad_Id).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(e => e.TipoAmbiente).WithMany(e => e.Lugares).HasForeignKey(e => e.tipoAmbiente_Id).OnDelete(DeleteBehavior.Cascade);
 
         }
     }

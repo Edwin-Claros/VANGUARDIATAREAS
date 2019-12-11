@@ -21,6 +21,7 @@ namespace GoToSPSWebApi.DataContext.Map
 
             builder.HasOne(e => e.Lugar).WithMany(e => e.ItinerarioEncabezado).HasForeignKey(e => e.lugar_Id).OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(e => e.Ciudad).WithMany(e => e.ItinerarioEncabezados).HasForeignKey(e => e.ciudad_Id).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(e => e.Usuario).WithMany(e => e.ItinerarioEncabezados).HasForeignKey(e => e.usuario_Id).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

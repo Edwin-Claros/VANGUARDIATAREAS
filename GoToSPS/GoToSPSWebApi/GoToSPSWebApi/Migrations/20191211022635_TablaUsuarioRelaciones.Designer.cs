@@ -4,14 +4,16 @@ using GoToSPSWebApi.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GoToSPSWebApi.Migrations
 {
     [DbContext(typeof(GoToSPSContext))]
-    partial class GoToSPSContextModelSnapshot : ModelSnapshot
+    [Migration("20191211022635_TablaUsuarioRelaciones")]
+    partial class TablaUsuarioRelaciones
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,21 +87,6 @@ namespace GoToSPSWebApi.Migrations
                     b.HasKey("ciudadId");
 
                     b.ToTable("ciudad","dbo");
-                });
-
-            modelBuilder.Entity("GoToSPSWebApi.Models.EstadoCivil", b =>
-                {
-                    b.Property<int>("estadoCivilId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("estadoCivilNombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("estadoCivilId");
-
-                    b.ToTable("estadoCivil","dbo");
                 });
 
             modelBuilder.Entity("GoToSPSWebApi.Models.ItinerarioDetalle", b =>
@@ -195,13 +182,9 @@ namespace GoToSPSWebApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("tipoAmbiente_Id");
-
                     b.HasKey("lugarId");
 
                     b.HasIndex("ciudad_Id");
-
-                    b.HasIndex("tipoAmbiente_Id");
 
                     b.ToTable("lugar","dbo");
                 });
@@ -219,36 +202,6 @@ namespace GoToSPSWebApi.Migrations
                     b.HasKey("prioridadId");
 
                     b.ToTable("prioridad","dbo");
-                });
-
-            modelBuilder.Entity("GoToSPSWebApi.Models.TipoAmbiente", b =>
-                {
-                    b.Property<int>("tipoAmbienteId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("tipoAmbienteNombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("tipoAmbienteId");
-
-                    b.ToTable("tipoAmbiente","dbo");
-                });
-
-            modelBuilder.Entity("GoToSPSWebApi.Models.TipoPersonalidad", b =>
-                {
-                    b.Property<int>("tipoPersonalidadId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("tipoPersonalidadNombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("tipoPersonalidadId");
-
-                    b.ToTable("tipoPersonalidad","dbo");
                 });
 
             modelBuilder.Entity("GoToSPSWebApi.Models.TipoUsuario", b =>
@@ -272,34 +225,13 @@ namespace GoToSPSWebApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("estadoCivil_Id");
-
-                    b.Property<int>("tipoAmbiente_Id");
-
-                    b.Property<int>("tipoPersonalidad_Id");
-
                     b.Property<int>("tipoUsuario_Id");
 
                     b.Property<string>("usuarioClave")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("usuarioFechaNacimiento")
-                        .HasColumnType("DateTime");
-
-                    b.Property<string>("usuarioInteres")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("usuarioMedioTransporte")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("usuarioNombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("usuarioProfesion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -309,12 +241,6 @@ namespace GoToSPSWebApi.Migrations
                         .HasColumnType("char");
 
                     b.HasKey("usuarioId");
-
-                    b.HasIndex("estadoCivil_Id");
-
-                    b.HasIndex("tipoAmbiente_Id");
-
-                    b.HasIndex("tipoPersonalidad_Id");
 
                     b.HasIndex("tipoUsuario_Id");
 
@@ -381,30 +307,10 @@ namespace GoToSPSWebApi.Migrations
                         .WithMany("Lugares")
                         .HasForeignKey("ciudad_Id")
                         .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("GoToSPSWebApi.Models.TipoAmbiente", "TipoAmbiente")
-                        .WithMany("Lugares")
-                        .HasForeignKey("tipoAmbiente_Id")
-                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("GoToSPSWebApi.Models.Usuario", b =>
                 {
-                    b.HasOne("GoToSPSWebApi.Models.EstadoCivil", "EstadoCivil")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("estadoCivil_Id")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("GoToSPSWebApi.Models.TipoAmbiente", "TipoAmbiente")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("tipoAmbiente_Id")
-                        .OnDelete(DeleteBehavior.Restrict);
-
-                    b.HasOne("GoToSPSWebApi.Models.TipoPersonalidad", "TipoPersonalidad")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("tipoPersonalidad_Id")
-                        .OnDelete(DeleteBehavior.Restrict);
-
                     b.HasOne("GoToSPSWebApi.Models.TipoUsuario", "TipoUsuario")
                         .WithMany("Usuarios")
                         .HasForeignKey("tipoUsuario_Id")

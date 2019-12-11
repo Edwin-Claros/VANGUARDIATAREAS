@@ -20,6 +20,9 @@ namespace GoToSPSWebApi.DataContext
         public DbSet<TipoUsuario> TipoUsuarios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Ciudad> Ciudades { get; set; }
+        public DbSet<EstadoCivil> EstadoCiviles { get; set; }
+        public DbSet<TipoAmbiente> TipoAmbientes { get; set; }
+        public DbSet<TipoPersonalidad> TipoPersonalidades { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
@@ -41,6 +44,9 @@ namespace GoToSPSWebApi.DataContext
             modelBuilder.ApplyConfiguration(new TipoUsuarioMap());
             modelBuilder.ApplyConfiguration(new UsuarioMap());
             modelBuilder.ApplyConfiguration(new CiudadMap());
+            modelBuilder.ApplyConfiguration(new EstadoCivilMap());
+            modelBuilder.ApplyConfiguration(new TipoAmbienteMap());
+            modelBuilder.ApplyConfiguration(new TipoPersonalidadMap());
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {
