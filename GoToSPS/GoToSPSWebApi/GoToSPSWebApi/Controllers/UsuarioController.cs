@@ -42,6 +42,20 @@ namespace GoToSPSWebApi.Controllers
             return usuario;
         }
 
+        // GET: api/Usuario/5
+        [HttpGet("{usuarioNombre}/{usuarioClave}")]
+        public async Task<ActionResult<Usuario>> GetUsuariobyClave(string usuarioNombre, string usuarioClave)
+        {
+            var usuario = await _context.Usuarios.Where(q => q.usuarioNombre == usuarioNombre && q.usuarioClave == usuarioClave).ToListAsync();
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(usuario);
+        }
+
         // PUT: api/Usuario/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)

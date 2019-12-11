@@ -4,14 +4,16 @@ using GoToSPSWebApi.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GoToSPSWebApi.Migrations
 {
     [DbContext(typeof(GoToSPSContext))]
-    partial class GoToSPSContextModelSnapshot : ModelSnapshot
+    [Migration("20191211011811_TablaCiudadRelaciones")]
+    partial class TablaCiudadRelaciones
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
